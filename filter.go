@@ -244,6 +244,5 @@ func compileFilter(filter string, pos int) (p *ber.Packet, new_pos int, err *Err
 		new_pos++
 		return
 	}
-	err = NewError(ErrorFilterCompile, errors.New("Reached end of filter without closing parens"))
-	return
+
 }
